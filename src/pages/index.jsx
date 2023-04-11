@@ -1,5 +1,16 @@
+import CreateToDo from '@/components/layout/CreateToDo';
+import ListToDos from '@/components/layout/ListToDos';
+import Page from '@/components/layout/Page';
+
 const HomePage = () => {
-  return <h1>Test</h1>;
+  return (
+    <Page>
+      <div className="flex gap-x-16 w-screen justify-center">
+        <ListToDos />
+        <CreateToDo />
+      </div>
+    </Page>
+  );
 };
 
 export default HomePage;

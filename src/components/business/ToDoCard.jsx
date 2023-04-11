@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/20/solid"
 
 const ToDoCard = ({ todo: { title, content, date, isDone } }) => (
-  <div className="rounded p-2">
+  <div className="rounded">
     <Disclosure>
       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-gradient-to-r from-sky-200 to-indigo-200 px-4 py-2 text-blue-900">
         <Text color="blue">{title}</Text>

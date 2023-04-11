@@ -39,14 +39,14 @@ const CreateCard = () => {
   )
 
   return (
-    <div className="flex basis-1/3 flex-col gap-y-4 rounded-lg bg-white p-6 shadow-md">
+    <div className="flex basis-1/3 flex-col gap-y-4 rounded-lg bg-white p-8 shadow-md">
       <Form
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
         className="flex h-full justify-between"
       >
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-6">
           <FormField name="title" label="Titre" />
           <FormField name="content" type="text-area" label="Contenu" />
           <FormField name="date" type="date" label="Date" />

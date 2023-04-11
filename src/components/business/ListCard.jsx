@@ -8,7 +8,7 @@ const ListCard = () => {
   } = useAppContext()
 
   return (
-    <div className="flex h-[36rem] basis-2/4 flex-col overflow-auto rounded-lg bg-white p-6 shadow-md">
+    <div className="flex h-[36rem] basis-2/4 flex-col gap-y-4 overflow-auto rounded-lg bg-white p-8 shadow-md">
       {todos?.length === 0 && (
         <Text className="flex h-full items-center justify-center font-medium">
           Pas de to-dos pour le moment.

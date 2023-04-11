@@ -8,7 +8,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#2563EB",
+          hover: "#3A72EC",
+        },
+      },
+    },
   },
   plugins: [require("@headlessui/tailwindcss")],
 }

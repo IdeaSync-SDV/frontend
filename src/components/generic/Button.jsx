@@ -1,22 +1,22 @@
-import { cva } from 'class-variance-authority';
+import { cva } from "class-variance-authority"
 
-const variants = cva('rounded-md px-3 py-2 font-semibold', {
+const variants = cva("rounded-md px-3 py-2 font-semibold", {
   variants: {
     color: {
-      primary: 'bg-blue-500 hover:bg-blue-400 text-white',
+      primary: "bg-blue-500 hover:bg-blue-400 text-white",
       ghost:
-        'bg-transparent hover:bg-gray-200 text-gray-900 font-normal text-sm',
+        "bg-transparent hover:bg-gray-200 text-gray-900 font-normal text-sm",
     },
   },
   defaultVariants: {
-    color: 'primary',
+    color: "primary",
   },
-});
+})
 
 const Button = ({ className, color, children, onClick }) => (
   <button className={variants({ color, className })} onClick={onClick}>
     {children}
   </button>
-);
+)
 
-export default Button;
+export default Button

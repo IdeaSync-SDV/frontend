@@ -1,23 +1,23 @@
-import { useAppContext } from '@/components/business/AppContext';
-import ToDoCard from '@/components/business/ToDoCard';
+import { useAppContext } from "@/components/business/AppContext"
+import ToDoCard from "@/components/business/ToDoCard"
 
 const ListCard = () => {
   const {
     state: { todos },
-  } = useAppContext();
+  } = useAppContext()
 
   return (
-    <div className="bg-white rounded-lg flex flex-col p-6 shadow-md basis-1/3 h-[36rem] overflow-auto">
+    <div className="flex h-[36rem] basis-1/3 flex-col overflow-auto rounded-lg bg-white p-6 shadow-md">
       {todos?.length === 0 && (
-        <p className="flex h-full justify-center items-center font-medium">
+        <p className="flex h-full items-center justify-center font-medium">
           Pas de to-dos pour le moment.
         </p>
       )}
       {todos?.length
-        ? todos?.map((todo, i) => <ToDoCard todo={todo} index={i} />)
+        ? todos?.map((todo, i) => <ToDoCard key={i} todo={todo} />)
         : null}
     </div>
-  );
-};
+  )
+}
 
-export default ListCard;
+export default ListCard

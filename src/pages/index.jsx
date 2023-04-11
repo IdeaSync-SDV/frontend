@@ -1,6 +1,6 @@
-import CreateCard from '@/components/business/CreateCard';
-import ListCard from '@/components/business/ListCard';
-import Page from '@/components/layout/Page';
+import CreateCard from "@/components/business/CreateCard"
+import ListCard from "@/components/business/ListCard"
+import Page from "@/components/layout/Page"
 
 const HomePage = () => {
   return (
@@ -10,7 +10,7 @@ const HomePage = () => {
         <CreateCard />
       </div>
     </Page>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

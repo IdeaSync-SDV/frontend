@@ -1,5 +1,5 @@
-import { AppContextProvider } from '@/components/business/AppContext';
-import '../styles/globals.css';
+import { AppContextProvider } from "@/components/business/AppContext"
+import "../styles/globals.css"
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
@@ -7,5 +7,5 @@ export default function MyApp({ Component, pageProps }) {
     <AppContextProvider>
       <Component {...pageProps} />
     </AppContextProvider>
-  );
+  )
 }

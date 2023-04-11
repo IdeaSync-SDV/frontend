@@ -1,18 +1,18 @@
-import { Disclosure, Transition } from '@headlessui/react';
-import { dateToRelative } from '@/utils/formatter';
+import { Disclosure, Transition } from "@headlessui/react"
+import { dateToRelative } from "@/utils/formatter"
 import {
   ChevronRightIcon,
   ClockIcon,
   CheckIcon,
   XMarkIcon,
-} from '@heroicons/react/20/solid';
+} from "@heroicons/react/20/solid"
 
-const ToDoCard = ({ todo: { title, content, date, isDone }, index }) => (
-  <div key={index} className="p-2 rounded">
+const ToDoCard = ({ todo: { title, content, date, isDone } }) => (
+  <div className="rounded p-2">
     <Disclosure>
-      <Disclosure.Button className="flex justify-between w-full bg-gradient-to-r from-sky-200 to-indigo-200 text-blue-900 text-left text-sm items-center py-2 px-4 rounded-lg font-medium">
+      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-gradient-to-r from-sky-200 to-indigo-200 px-4 py-2 text-left text-sm font-medium text-blue-900">
         <span>{title}</span>
-        <ChevronRightIcon className="ui-open:rotate-90 ui-open:transform w-5" />
+        <ChevronRightIcon className="w-5 ui-open:rotate-90 ui-open:transform" />
       </Disclosure.Button>
       <Transition
         enter="transition duration-100 ease-out"
@@ -23,7 +23,7 @@ const ToDoCard = ({ todo: { title, content, date, isDone }, index }) => (
         leaveTo="transform scale-95 opacity-0"
       >
         <Disclosure.Panel className="flex justify-between divide-x py-2">
-          <div className="basis-2/3 pr-3 pl-1">
+          <div className="basis-2/3 pl-1 pr-3">
             <p className="break-all">{content}</p>
           </div>
           <div className="basis-1/3 pl-3">
@@ -49,6 +49,6 @@ const ToDoCard = ({ todo: { title, content, date, isDone }, index }) => (
       </Transition>
     </Disclosure>
   </div>
-);
+)
 
-export default ToDoCard;
+export default ToDoCard

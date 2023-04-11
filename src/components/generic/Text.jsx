@@ -1,9 +1,10 @@
 import { cva } from "class-variance-authority"
 
-const variants = cva("font-normal", {
+const variants = cva("", {
   variants: {
     color: {
       primary: "text-gray-900",
+      blue: "text-blue-900 font-medium",
       error: " text-red-500",
     },
   },

@@ -19,13 +19,10 @@ export const AppContextProvider = (props) => {
     setTodos(todos)
   }, [])
 
-  const addTodo = useCallback(
-    async ({ title, content, date }) => {
-      await invoke("add_todo", { title, content, date })
-      await getTodos()
-    },
-    [getTodos]
-  )
+  const addTodo = useCallback(async ({ title, content, date }) => {
+    const todo = await invoke("add_todo", { title, content, date })
+    setTodos((todos) => [...todos, todo])
+  }, [])
 
   useEffect(() => {
     getTodos()

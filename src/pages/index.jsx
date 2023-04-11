@@ -1,13 +1,13 @@
-import CreateToDo from '@/components/business/CreateCard';
-import ListToDos from '@/components/layout/ListToDos';
+import CreateCard from '@/components/business/CreateCard';
+import ListCard from '@/components/business/ListCard';
 import Page from '@/components/layout/Page';
 
 const HomePage = () => {
   return (
     <Page>
       <div className="flex gap-x-16 w-screen justify-center">
-        <ListToDos />
-        <CreateToDo />
+        <ListCard />
+        <CreateCard />
       </div>
     </Page>
   );

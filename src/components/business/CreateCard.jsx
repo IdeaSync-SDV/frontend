@@ -2,8 +2,8 @@ import { useAppContext } from '@/components/business/AppContext';
 import FormField from '@/components/generic/FormField';
 import Button from '@/components/generic/Button';
 import Form from '@/components/generic/Form';
-import * as yup from 'yup';
 import { useCallback } from 'react';
+import * as yup from 'yup';
 
 const initialValues = {
   title: '',
@@ -21,7 +21,7 @@ const validationSchema = yup.object().shape({
     .label('Date'),
 });
 
-const CreateToDo = () => {
+const CreateCard = () => {
   const {
     actions: { addTodo },
   } = useAppContext();
@@ -52,4 +52,4 @@ const CreateToDo = () => {
   );
 };
 
-export default CreateToDo;
+export default CreateCard;

@@ -1,4 +1,4 @@
-import CreateToDo from '@/components/layout/CreateToDo';
+import CreateToDo from '@/components/business/CreateCard';
 import ListToDos from '@/components/layout/ListToDos';
 import Page from '@/components/layout/Page';
 

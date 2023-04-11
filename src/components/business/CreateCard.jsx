@@ -35,7 +35,7 @@ const CreateCard = () => {
   )
 
   return (
-    <div className="flex basis-1/3 flex-col gap-y-4 rounded bg-white p-6 shadow-md">
+    <div className="flex basis-1/3 flex-col gap-y-4 rounded-lg bg-white p-6 shadow-md">
       <Form
         initialValues={initialValues}
         validationSchema={validationSchema}

@@ -1,8 +1,8 @@
 import { DateTime } from 'luxon';
 
-export const dateToRelative = (date) => {
-  const now = DateTime.local();
-  return capitalize(now.toRelativeCalendar());
+export const dateToRelative = (isoDate) => {
+  const date = DateTime.fromISO(isoDate);
+  return capitalize(date.toRelativeCalendar());
 };
 
 const capitalize = (str) => {

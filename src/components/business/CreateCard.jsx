@@ -3,6 +3,7 @@ import FormField from "@/components/generic/FormField"
 import Button from "@/components/generic/Button"
 import Form from "@/components/generic/Form"
 import { useCallback } from "react"
+import { DateTime } from "luxon"
 import * as yup from "yup"
 
 const initialValues = {
@@ -16,7 +17,10 @@ const validationSchema = yup.object().shape({
   content: yup.string().required("Le contenu est obligatoire").label("Contenu"),
   date: yup
     .date()
-    .min(new Date(), "La date ne peut pas être dans le passé")
+    .min(
+      DateTime.now().minus({ days: 1 }).toJSDate(),
+      "La date ne peut pas être dans le passé"
+    )
     .required("La date est obligatoire")
     .label("Date"),
 })

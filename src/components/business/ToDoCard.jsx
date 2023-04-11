@@ -24,7 +24,7 @@ const ToDoCard = ({ todo: { title, content, date, isDone } }) => (
       >
         <Disclosure.Panel className="flex justify-between divide-x py-2">
           <div className="basis-2/3 pl-1 pr-3">
-            <p className="break-all">{content}</p>
+            <p className="break-words">{content}</p>
           </div>
           <div className="basis-1/3 pl-3">
             <div className="flex gap-x-2">

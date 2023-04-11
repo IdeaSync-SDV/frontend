@@ -1,7 +1,22 @@
-# Tauri + Next.js
+# IdeaSync - Frontend
 
-This template should help get you started developing with Tauri and Next.js.
+Interface web pour le to-dos.
 
-## Recommended IDE Setup
+Projet créé dans le cadre du cours de Projet d'Études.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Développement
+
+### Prérequis
+
+- Node.js
+
+### Installation
+
+1. Clonez le dépôt.
+2. Installez les dépendances avec `npm install`.
+3. Lancez le serveur de développement avec `npm run tauri dev`.
+
+## Déploiement
+
+1. Lancez la commande `npm run tauri build`.
+   - Vous trouverez l'exécutable dans `src-tauri/target/release/bundle/[votre_os]/`.

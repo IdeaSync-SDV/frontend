@@ -1,3 +1,5 @@
+import Text from "@/components/generic/Text"
+
 const Stats = ({ todos }) => {
   if (!todos) {
     return null
@@ -8,9 +10,11 @@ const Stats = ({ todos }) => {
 
   return (
     <div className="flex items-center">
-      <span className="text-red-500">{uncompletedTodos} à faire</span>
+      <Text className="font-medium" color="error">
+        {uncompletedTodos} à faire
+      </Text>
       <span className="px-2 text-gray-400">/</span>
-      <span className="text-gray-900">{completedTodos} faits</span>
+      <Text>{completedTodos} faits</Text>
     </div>
   )
 }

@@ -8,7 +8,8 @@ Projet créé dans le cadre d'un projet d'études.
 
 ### Prérequis
 
-- Node.js
+- [Node.js](https://nodejs.org/en/download/current)
+- [Rust](https://www.rust-lang.org/tools/install)
 
 ### Installation
 

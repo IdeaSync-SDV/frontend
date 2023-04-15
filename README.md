@@ -2,7 +2,7 @@
 
 Interface web pour le to-dos.
 
-Projet créé dans le cadre du cours de Projet d'Études.
+Projet créé dans le cadre d'un projet d'études.
 
 ## Développement
 

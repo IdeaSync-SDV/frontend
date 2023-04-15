@@ -1,6 +1,6 @@
 # IdeaSync - Frontend
 
-Interface web pour le to-dos.
+Interface web pour les to-dos.
 
 Projet créé dans le cadre d'un projet d'études.
 
